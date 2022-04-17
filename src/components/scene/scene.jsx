@@ -44,12 +44,12 @@ return (
       <div id='canvas-container'>
         
       <Canvas dpr={[1,2]} camera={{ fov: 12 }} shadows>
-        
+      <color attach="background" args={['#ffffff']} />
       <ambientLight />
       <pointLight position={[10, 10, 10]} />
       <Suspense fallback={null}>
           <Model />
-          <Environment preset="city" />
+          {/* <Environment preset="sunset" background /> */}
         </Suspense>
         <OrbitControls ref={ref} autoRotate />
       {/* <Box position={[0, 0, 0]} /> */}
