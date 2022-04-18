@@ -101,7 +101,7 @@ function App() {
           <CardMedia
             style={{ position: 'top', width:'100%', height:'100%' }}
             image={
-              'https://64.media.tumblr.com/375513d9ff38cf71101d4ddd5ac4b022/87ec10bdd7df8385-6a/s2048x3072/b6217b857ad45a39256725928e626487a37c23fe.jpg'
+              'https://64.media.tumblr.com/3b0a7f8c6070527a28449efec02ecde8/5c80101c31047375-22/s2048x3072/37dff7252101baf441ac5b146c1a37b7cbdcdcb5.jpg'
             }
           />
           <Box sx={{ my: 10}}  style={{width:'100%', display:'flex', boxShadow: "none"}} >
@@ -113,7 +113,7 @@ function App() {
           <header className="sub-text">
          THE ROBINSON NETWORK
             </header>
-            <subtitle className="sub-head" style={{color:'white', fontSize:'20px'}}>
+            <subtitle className="sub-head" style={{color:'black', fontSize:'20px'}}>
          Blockchain development shaping Web3 through storytelling, experiences, and community.
             </subtitle> 
             <br />
