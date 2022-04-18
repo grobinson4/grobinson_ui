@@ -18,6 +18,11 @@
   src: url(./assests/fonts/GraphikMedium.otf);
 }
 
+@font-face {
+  font-family: Graphik-Black;
+  src: url(./assests/fonts/GraphikBlack.otf);
+}
+
 html, body {
   max-width: 100%;
     overflow-x: hidden;
@@ -188,7 +193,7 @@ html, body {
 .sub-text {
   font-size: 60px;
   color: black;
-  font-family: 'Graphik-Medium';
+  /* font-family: 'Graphik-Medium'; */
   text-align: center;
   justify-content: center;
   font-weight: bold;

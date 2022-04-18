@@ -110,7 +110,7 @@ function App() {
       <CardContent style={{width:'100%', display:'flex', justifyContent:'center', alignItems:'center'}}>
           {/* <p className="header-title" style={{Color:'white'}}>NIKE LEGENDS NON-FUNGIBLE TOKENS</p> */}
           <form>
-          <header className="sub-text">
+          <header className="sub-text" style={{fontFamily:'Graphik-Black'}}>
          THE ROBINSON NETWORK
             </header>
             <subtitle className="sub-head" style={{color:'black', fontSize:'20px'}}>
@@ -119,7 +119,6 @@ function App() {
             <br />
             <br />
             {/* <GitHubCalendar username="grobinson4" style={{color:'white',  padding:20}}/> */}
-        
             <br />
             
             
