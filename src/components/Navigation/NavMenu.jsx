@@ -216,11 +216,11 @@ import {
             edge="start"
             color="inherit"
             aria-label="open drawer"
-            sx={{ mr: 2 }}
+            sx={{ mr: 5}}
           >
             <MenuIcon />
           </IconButton>
-          <Typography
+          {/* <Typography
             variant="h5"
             noWrap
             component="div"
@@ -228,7 +228,7 @@ import {
             style={{fontFamily:'Autografia-Black'}}
             >
             Gary D. Robinson
-          </Typography>
+          </Typography> */}
           {/* <Search>
             <SearchIconWrapper>
               <SearchIcon />
@@ -238,7 +238,15 @@ import {
               inputProps={{ 'aria-label': 'search' }}
             />
           </Search> */}
-          <Box sx={{ flexGrow: 1 }} />
+          <Box sx={{ flexGrow: 1 }} ><Typography
+            variant="h5"
+            noWrap
+            component="div"
+            sx={{ display: { xs: 'block', sm: 'block' } }}
+            style={{fontFamily:'Autografia-Black'}}
+            >
+            Gary D. Robinson
+          </Typography></Box> 
           <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
             <IconButton size="large" aria-label="show 4 new mails" color="inherit">
               <Badge color="error">
