@@ -225,8 +225,8 @@ import {
             noWrap
             component="div"
             sx={{ display: { xs: 'block', sm: 'block' } }}
-            fontFamily="Autografia-Black"
-          >
+            style={{fontFamily:'Autografia-Black'}}
+            >
             Gary D. Robinson
           </Typography>
           {/* <Search>
