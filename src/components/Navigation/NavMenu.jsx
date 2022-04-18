@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { styled, alpha } from '@mui/material/styles';
-import './NavBar.css';
+import '../../App.css';
 import Paper from '@mui/material/Paper';
 import PropTypes from 'prop-types';
 import CssBaseline from '@mui/material/CssBaseline';

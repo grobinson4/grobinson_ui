@@ -275,3 +275,13 @@ html, body {
     }
 
 
+    .G-logo {
+      font-family: 'Autografia-Black';
+      font-size: xx-large;
+      text-align: center;
+      align-items: center;
+      align-content: center;
+      align-self: center;
+     justify-content: center;
+    }
+    
