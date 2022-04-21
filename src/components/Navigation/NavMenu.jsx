@@ -209,7 +209,7 @@ import {
         <Box sx={{ flexGrow: 1}}>
        
         
-      <AppBar position="fixed" >
+      <AppBar position="fixed" elevation={0} >
         <Toolbar>
           <IconButton
             size="large"
@@ -243,7 +243,7 @@ import {
             noWrap
             component="div"
             sx={{ display: { xs: 'block', sm: 'block' } }}
-            style={{fontFamily:'Autografia-Black'}}
+            style={{fontFamily:'Autografia-Black', fontSize:'30px'}}
             >
             Gary D. Robinson
           </Typography></Box> 

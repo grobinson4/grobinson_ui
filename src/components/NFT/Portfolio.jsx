@@ -22,7 +22,7 @@ import Avatar from '@mui/material/Avatar';
 import { red } from '@mui/material/colors';
 // import logo from './assests/images/Logo_NIKE.svg.png';
 import ethSymbol from '../../assests/images/ETH.svg';
-import FuturePoster from '../../assests/images/R.png';
+import FuturePoster from '../../assests/images/SolanaWorld.jpg';
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import Button from '@mui/material/Button';
@@ -114,8 +114,8 @@ const NFT_Portfolio = () => {
         return (
           
           <div className='gif-grid'>
-              <div className="gif-item" key={index}>
-                <Card sx={{ maxWidth: 450, borderRadius:'0.8rem', boxShadow: "none" }}>
+              <div className="gif-item"  key={index}>
+                <Card sx={{ maxWidth: 450, borderRadius:'0.8rem', background:'radial-gradient(circle at top, #ffffff , #eef0fb)', boxShadow: "none" }}>
       {/* <CardHeader
         avatar={
           <Avatar src={ ethSymbol } sizes="(max-width: 30px) 30px, 50vw"  aria-label="recipe">
@@ -133,12 +133,12 @@ const NFT_Portfolio = () => {
         subheader="Created by Gary D. Robinson"
       /> */}
 
-      <CardMedia >
+      <CardMedia style={{background:'radial-gradient(circle at top, #ffffff , #eef0fb)'}} >
         {/* <MyScene className='card_model'/> */}
-        <img alt="pic" style={{borderRadius:'0.8rem'}} src={FuturePoster}></img>
+        <img alt="pic" style={{borderRadius:'0.8rem', background: 'linear-gradient(225deg, #ffffff 0%, #f9f6f0 100%)'}} src={FuturePoster}></img>
         </CardMedia>
 
-      <CardContent>
+      <CardContent style={{background: 'radial-gradient(circle at center, #ffffff , #f9f6f0)'}}>
       {/* <Typography variant="subtitle" fontWeight="bold" fontSize="22px" className='nft_owner' component="div">
           The Cashflow Network
           </Typography> */}
@@ -149,7 +149,7 @@ const NFT_Portfolio = () => {
         </Typography> */}
       
         <CardActions style={{ justifyContent:'center'}} disableSpacing>
-      <Button size="medium" variant="contained" style={{ fontFamily:'Graphik-Medium'}} color="secondary" >Discover</Button>
+        <Button size="large" variant="contained" style={{ fontFamily:'Graphik-Medium', borderRadius:'10rem'}} color="secondary" >Discover</Button>
         {/* <ExpandMore
           expand={expanded}
           onClick={handleExpandClick}

@@ -34,6 +34,7 @@ import { jsx, css, Global, ClassNames } from '@emotion/react'
 import Toolbar from '@mui/material/Toolbar';
 import NFTPortfolio from './components/NFT/Portfolio';
 import { shadows } from '@mui/system';
+import { BorderStyle } from '@mui/icons-material';
 
 
 
@@ -97,21 +98,21 @@ function App() {
         <NoSsr>
         </NoSsr>
       
-        <Card style={{minHeight:'600px', boxShadow: "none"}}>
+        <Card style={{minHeight:'600px', borderImage:'linear-gradient(270deg, #ffffff 0%, #eef0fb 100%)', borderWidth:'1px', borderStyle:'solid'}}>
           <CardMedia
-            style={{ position: 'top', width:'100%', height:'100%' }}
-            image={
-              'https://64.media.tumblr.com/3b0a7f8c6070527a28449efec02ecde8/5c80101c31047375-22/s2048x3072/37dff7252101baf441ac5b146c1a37b7cbdcdcb5.jpg'
-            }
+            style={{ position: 'top', width:'100%', boxShadow: 'outset 0px 0px 40px 40px #000000', background: 'radial-gradient(circle at top, #ffffff , #fff7f5)', height:'100%' }}
+            // image={
+            //   'https://64.media.tumblr.com/3b0a7f8c6070527a28449efec02ecde8/5c80101c31047375-22/s2048x3072/37dff7252101baf441ac5b146c1a37b7cbdcdcb5.jpg'
+            // }
           />
           <Box sx={{ my: 10}}  style={{width:'100%', display:'flex', boxShadow: "none"}} >
       
-      <Card style={{background:'none', border: "none", boxShadow: "none", display:'flex', justifyContent:'space-between',  width:'100%'}}>
+      <Card style={{background:'none', borderImage:'radial-gradient(circle at top, #ffffff , #eef0fb)', boxShadow: 'outset 00px 00px 40px 40px #000000', display:'flex', justifyContent:'space-between',  width:'100%'}}>
       <CardContent style={{width:'100%', display:'flex', justifyContent:'center', alignItems:'center'}}>
           {/* <p className="header-title" style={{Color:'white'}}>NIKE LEGENDS NON-FUNGIBLE TOKENS</p> */}
           <form>
-          <header className="sub-text" style={{fontFamily:'Graphik-Black'}}>
-         THE ROBINSON NETWORK
+          <header className="sub-text" style={{fontFamily:'Graphik-Medium'}}>
+         10k Projects
             </header>
             <subtitle className="sub-head" style={{color:'black', fontSize:'20px'}}>
          Blockchain development shaping Web3 through storytelling, experiences, and community.
@@ -122,7 +123,7 @@ function App() {
             <br />
             
             
-            <Button size="medium" className='nft_button' color="secondary" style={{ fontFamily:'Graphik-Medium'}} variant="contained">
+            <Button size="large" className='nft_button' color="secondary" style={{ fontFamily:'Graphik-Medium', borderRadius:'10rem'}} variant="contained">
           Coming soon
             </Button>
            
@@ -134,7 +135,7 @@ function App() {
             </Card>
           </Box>
         </Card>
-        {/* <div style={{ paddingTop: '30px'}} /> */}
+        {/* <div style={{display:'block', width:'100vh', height:'30px', border: 'solid 1.5em rgba(#000, .03)'}} /> */}
       </>
     );
   });
@@ -143,7 +144,7 @@ function App() {
   const renderChainLinks = () => {
   
         return(
-          <div className="connected-container" >
+          <div className="connected-container" style={{boxShadow: 'outset 0px 0px 40px 40px #000000', borderImage:'linear-gradient(270deg, #ffffff 0%, #eef0fb 100%)', borderWidth:'1px', borderStyle:'solid'}} >
             
             <div className='header-grid' >
             <HeaderCard></HeaderCard>

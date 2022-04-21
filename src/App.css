@@ -30,7 +30,7 @@ html, body {
 
 .App {
   height: 100vh;
-  background-color: #ffffff;
+  background: radial-gradient(circle at top, #ffffff , #f7ece8);
   overflow-x: hidden;
   text-align: center;
 }
@@ -90,6 +90,7 @@ html, body {
   border-width:0.1em;
   box-shadow: 'none';
   
+  
 }
 
 .gif-grid .gif-item {
@@ -110,6 +111,7 @@ html, body {
   border-radius: 10px;
   object-fit: cover;
   box-shadow: none;
+  background-color: linear-gradient(270deg, #ffffff 0%, #eef0fb 100%);
 }
 
 .connected-container input[type='text'] {
@@ -256,7 +258,7 @@ html, body {
         height: 0%;
         top: 0;
         z-index: 1;
-        background: 'linear-gradient(to top, #000000, rgba(0,0,0,0))';
+        background: 'radial-gradient(circle at top, #ffffff , #eef0fb)';
         box-shadow:'none';
         border:'none'
       };

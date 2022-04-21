@@ -8,7 +8,7 @@ height: 55px;
 display: flex;
 justify-content: space-between;
 
-z-index: 12;
+z-index: 1;
 /* Third Nav */
 /* justify-content: flex-start; */
 `;
@@ -19,7 +19,7 @@ height: 30px;
 display: flex;
 justify-content: space-between;
 background: -webkit-linear-gradient(left, #ECEBE9, #F5F5F5);
-z-index: 12;
+z-index: 1;
 /* Third Nav */
 /* justify-content: flex-start; */
 `;
