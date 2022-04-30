@@ -22,7 +22,7 @@ import Avatar from '@mui/material/Avatar';
 import { red } from '@mui/material/colors';
 // import logo from './assests/images/Logo_NIKE.svg.png';
 import ethSymbol from '../../assests/images/ETH.svg';
-import FuturePoster from '../../assests/images/SolanaWorld.jpg';
+import FuturePoster from '../../assests/images/Delorean.jpg';
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import Button from '@mui/material/Button';

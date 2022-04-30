@@ -20,7 +20,7 @@ import { borderRadius, styled } from '@mui/system';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
 import Avatar from '@mui/material/Avatar';
 import { red } from '@mui/material/colors';
-import logo from './assests/images/Logo_NIKE.svg.png';
+import logo from './assests/images/grobins.svg';
 import BottomNavigation  from '@mui/material/BottomNavigation';
 import BottomNavigationAction from '@mui/material/BottomNavigationAction';
 import RestoreIcon from '@mui/icons-material/Restore';
@@ -35,9 +35,17 @@ import Toolbar from '@mui/material/Toolbar';
 import NFTPortfolio from './components/NFT/Portfolio';
 import { shadows } from '@mui/system';
 import { BorderStyle } from '@mui/icons-material';
-
-
-
+import TwitterIcon from '@mui/icons-material/Twitter';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import Badge from '@mui/material/Badge';
+import OutlinedInput from '@mui/material/OutlinedInput';
+import InputLabel from '@mui/material/InputLabel';
+import FormControl from '@mui/material/FormControl';
+import TextField from '@mui/material/TextField';
+import SendIcon from '@mui/icons-material/Send';
+import InputAdornment from '@mui/material/InputAdornment';
+import Divider from '@mui/material/Divider';
 
 const Offset = styled('div')(({ theme }) => theme.mixins.toolbar);
 
@@ -98,34 +106,84 @@ function App() {
         <NoSsr>
         </NoSsr>
       
-        <Card style={{minHeight:'600px', borderImage:'linear-gradient(270deg, #ffffff 0%, #eef0fb 100%)', borderWidth:'1px', borderStyle:'solid'}}>
+        <Card style={{minHeight:'850px', borderImage:'linear-gradient(270deg, #ffffff 0%, #eef0fb 100%)', borderWidth:'1px', borderStyle:'solid'}}>
           <CardMedia
             style={{ position: 'top', width:'100%', boxShadow: 'outset 0px 0px 40px 40px #000000', background: 'radial-gradient(circle at top, #ffffff , #fff7f5)', height:'100%' }}
             // image={
             //   'https://64.media.tumblr.com/3b0a7f8c6070527a28449efec02ecde8/5c80101c31047375-22/s2048x3072/37dff7252101baf441ac5b146c1a37b7cbdcdcb5.jpg'
             // }
           />
-          <Box sx={{ my: 10}}  style={{width:'100%', display:'flex', boxShadow: "none"}} >
+          <Box sx={{ my: 35}}  style={{width:'100%', display:'flex', boxShadow: "none"}} >
       
       <Card style={{background:'none', borderImage:'radial-gradient(circle at top, #ffffff , #eef0fb)', boxShadow: 'outset 00px 00px 40px 40px #000000', display:'flex', justifyContent:'space-between',  width:'100%'}}>
       <CardContent style={{width:'100%', display:'flex', justifyContent:'center', alignItems:'center'}}>
-          {/* <p className="header-title" style={{Color:'white'}}>NIKE LEGENDS NON-FUNGIBLE TOKENS</p> */}
-          <form>
-          <header className="sub-text" style={{fontFamily:'Graphik-Medium'}}>
-         10k Projects
+      
+          <form  style={{width:'100%'}}>
+          {/* <img alt="pic" style={{borderRadius:'0.8rem',  background: 'linear-gradient(225deg, #ffffff 0%, #f9f6f0 100%)'}} src={logo}></img> */}
+          {/* <br /> */}
+            {/* <br /> */}
+          <header className="sub-text" style={{fontFamily:'Graphik-medium', justifyContent:'center', alignItems:'center'}}>
+          <img alt="pic" style={{borderRadius:'0.8rem', height:'120px', width:'120px', justifyContent:'center', alignItems:'center', textAlign:'center', margin:'0'}} src={logo}></img>
             </header>
-            <subtitle className="sub-head" style={{color:'black', fontSize:'20px'}}>
-         Blockchain development shaping Web3 through storytelling, experiences, and community.
+            <subtitle className="sub-head" style={{color:'black', fontFamily:'Graphik-Black', fontSize:'30px', justifyContent:'center', alignItems:'center'}}>
+         STAY TUNED
             </subtitle> 
+            <br/>
+            <br/>
+            <TextField label="Email" sx={{ width: '35ch' }} InputProps={{
+          endAdornment: (
+            <InputAdornment position="end">
+              <Divider sx={{ height: 37, m: 0.5 }} color="#000000" orientation="vertical" />
+              <IconButton size="small" color="inherit">
+             
+                <SendIcon  />
+      
+            </IconButton>
+            </InputAdornment>
+          ),
+        }} multiline="false" size="small" color="secondary" focused />
+           
+            <br/>
+            <div style={{display:'flex', width:'100%', justifyContent:'center', alignItems:'center'}}>
+            <IconButton size="large" aria-label="show 4 new mails" color="inherit">
+              <Badge color="error">
+                <TwitterIcon />
+              </Badge>
+            </IconButton>
+            <IconButton
+              size="large"
+              aria-label="show 17 new notifications"
+              color="inherit"
+            >
+              <Badge  color="error">
+                <InstagramIcon />
+              </Badge>
+            </IconButton>
+            <IconButton
+              size="large"
+              // edge="end"
+              aria-label="account of current user"
+              // aria-controls={menuId}
+              aria-haspopup="true"
+              // onClick={handleProfileMenuOpen}
+              color="inherit"
+            >
+              <Badge  color="error">
+              <LinkedInIcon />
+              </Badge>
+            </IconButton>
+            
+          </div>
+          <p style={{ fontFamily:'Graphik-Medium'}} >info@grobinson.xyz</p>
             <br />
-            <br />
+           
             {/* <GitHubCalendar username="grobinson4" style={{color:'white',  padding:20}}/> */}
-            <br />
+         
             
             
-            <Button size="large" className='nft_button' color="secondary" style={{ fontFamily:'Graphik-Medium', borderRadius:'10rem'}} variant="contained">
+            {/* <Button size="large" className='nft_button' color="secondary" style={{ fontFamily:'Graphik-Medium'}} variant="contained">
           Coming soon
-            </Button>
+            </Button> */}
            
             </form>
             {/* <button className="cta-button submit-gif-button" onClick={createGifAccount}>
@@ -148,11 +206,11 @@ function App() {
             
             <div className='header-grid' >
             <HeaderCard></HeaderCard>
-        <h2 className='section-header' style={{}}>SMART CONTRACTS</h2>
+        {/* <h2 className='section-header' style={{}}>SMART CONTRACTS</h2> */}
         </div>
-           <br></br>
+           {/* <br></br> */}
           
-            <NFTPortfolioDisplay/>
+            {/* <NFTPortfolioDisplay/> */}
           </div>
         )
   }
@@ -164,7 +222,7 @@ function App() {
       
       <MyNav/>
       
-      <div style={{ paddingTop: '40px'}} />
+      {/* <div style={{ paddingTop: '40px'}} /> */}
         <div className="authed-container">
         
           <div className='header-container'>
@@ -172,7 +230,7 @@ function App() {
         </div>
         
         
-        <div className="footer-container">
+        {/* <div className="footer-container">
         <Box sx={{ pb: 7 }} >
       <CssBaseline />
         <Paper sx={{ position: 'fixed', bottom: 0, left: 0, right: 0, boxShadow:10 }} elevation={3}>
@@ -187,7 +245,7 @@ function App() {
 </Paper>
 </Box>
 
-        </div>
+        </div> */}
        
     </div>
     
